@@ -1,12 +1,22 @@
 <html>
+<style>
+.transparent {
+  background:#7f7f7f;
+  background:rgba(0,0,0,0.3);
+}
+</style>
 <title>Create New</title>
+<body background='/img/big-one.png'>
+<div class='transparent'>
 <!--<p>For the inputs, I suggest the location and the year -Example: Paris18- as the name. 
 Then input the number of images you want to upload,
 and select the images.</p>-->
-<form method="post" action="output.php" autocomplete="off">
-Name of new page: <input type="text" name="name" /><br />
-How many images:  <input type="text" name="num" /><br />
-Photos: <input type="file" name="photo" multiple><br />
-<input type="submit" value="Submit" name="submit" />
+<form method='post' action='output.php' autocomplete='off'>
+Name of new page: <input type='text' name='name' /><br />
+How many images:  <input type='text' name='num' /><br />
+Photos: <input type='file' accept='image/png' name='photo' multiple><br />
+<input type='submit' value='Submit' name='submit' />
 </form>
+</div>
+</body>
 </html>

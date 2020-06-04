@@ -15,8 +15,9 @@ if ($ext !== '.png'){
 else{
 	file_put_contents('/home/magickalwiz/http/pics/img/',$photo,FILE_USE_INCLUDE_PATH);
 }*/
-file_put_contents('/home/magickalwiz/http/pics/img/'.$name.'.png',$photo,FILE_USE_INCLUDE_PATH);
-$image='/img/'.$name.'.png';
+file_put_contents('/home/magickalwiz/http/pics/'.$name.'.png',$photo,FILE_USE_INCLUDE_PATH);
+move_uploaded_file($name.'.png','home/magickalwiz/http/pics/img/')
+/*$image='/img/'.$name.'.png';
 $data = fopen ($image, 'rb');
 $size=filesize ($image);
 $contents= fread ($data, $size);
@@ -25,7 +26,7 @@ $encoded= base64_encode($contents);
 $src= 'http://192.18.1.93/pics/img/'.$name.'.png';
 $final= imagecreatefromstring(file_get_contents($src);
 file_put_contents('/home/magickalwiz/http/pics/img/'.$name.'.png',$final,FILE_USE_INCLUDE_PATH);
-
+*/
 #$countfiles = count(array_filter($_FILES['file']['name']));
 file_put_contents('/home/magickalwiz/http/pics/'.$name.'.html',$file,FILE_USE_INCLUDE_PATH | FILE_APPEND);
 file_put_contents('/home/magickalwiz/http/pics/'.$name.'.html','
