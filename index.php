@@ -4,13 +4,13 @@
       <title>MagickalWiz - The Wizards</title>
       <link rel="icon" 
       type="image/png" 
-      href="code.png">
+      href="/img/code.png">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 <div class="container">
   <span class="text1"><font color="#008d00">The Wizards</font></span>
-  <img src = "wizlogo.png" >
+  <img src = "/img/wizlogo.png" >
   <span class="text1"><font color="#008d00">MagickalWiz</font></span>
 </div>
   </body>
