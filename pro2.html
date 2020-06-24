@@ -1,0 +1,277 @@
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+[class*='col-'] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.header {
+	font-size: 20px;
+  background-color: #111;
+  background: url('/img/widepro.png') no-repeat 1px;
+  background-size: cover;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #111;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #616161;
+}
+
+.aside {
+  background-color: #111;
+  padding: 15px;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #111;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*='col-'] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body style='background-color:#bfbfbf'>
+
+<div class='header'>
+  <h1>FancyPro<sup>&reg;</sup></h1>
+</div>
+
+<div class='row'>
+  <div class='col-2 col-s-3 menu'>
+    <ul>
+      <li><a href='#contact'>Contact</a></li>
+      <li><a href='#about'>About</a></li>
+      <li><a href='http://192.168.1.93/staff.php'>Staff</a></li>
+    </ul>
+  </div>
+<div class='col-1 col-s-1'></div>
+  <div class='col-4 col-s-9'>
+    <h1><u>FancyPro</u><sup>&reg;</sup></h1>
+    <p style='font-size:20px'><br>FancyPro<sup>&reg;</sup> is a company that professionally makes fancy... thingies? Stuffs? Yeah, let's go with that.
+    We are a blah company, with bonuses such as free coffee, lunch, and Ferraris at the office,
+    beach mansions and 600-ft yachts for all our workers, and 366 or more paid vacations days per year.
+    If you are interested in working for us, please don't bother. We don't want anyone who's not famous.
+    If you are famous, please contact us <a href='#contact'>here</a>.</br><hr></p>
+
+    <p style='font-size:20px'><br>FancyPro<sup>&reg;</sup> has won many awards, inculding the prestigious <i>Anon Exist Ent Award for Nothing In Particular</i>.
+    We have one of the best worker experiences in the area, from executive houses and vehicles
+    to free parking and bathrooms (with free toilet paper too!). The offices are state-of-the-art as well,
+    with the most modern architecture and the hottest designs. Small gardens are sprinkled around the
+    buildings, many with fragrant herbs and spices to freshen your workspace and enhance your allergies.<hr></p>
+
+    <div id='about'><p style='font-size:20px'><br>FancyPro<sup>&reg;</sup> Industries is based in Thistownnotexist, in Nostate, North America while our factory is based
+    in Taiwan (but then again, who's isn't?). We are at the head of the thingy industry, as we make the most
+    thingies as well as the best and fanciest. This is also proabably cause there is no competition.<hr></p></div>
+
+    <div id='contact'><p style='font-size:20px'><br>Contact FancyPro<sup>&reg;</sup> Industries at: (000) 123-4567, or FancyPro Factories at (111) 890-1234.
+    For job applications, please email weignorethis@fancypro.com. For the complaints we know you don't
+    have cause our products are perfect, email randomdude247@nowhere.com.
+    </p></div>
+  </div>
+  <div class='col-1 col-s-1'></div>
+  <div class='col-4 col-s-12'>
+    <div class='aside'>
+      <h2>What?</h2>
+      <p>FancyPro<sup>&reg;</sup> is a company dedicated to creating fancy stuffs and thingies.</p>
+      <h2>Where?</h2>
+      <p>Our main offices are in Thistownnotexist, Nostate, USA. Our factories are in Taiwan.</p>
+      <h2>Why?</h2>
+      <p>We believe that everyone should be able to afford infinite amounts of fancy stuffs and thingies.</p>
+    </div>
+  </div>
+</div>
+
+<div class='footer'>
+<h1><u>Product Gallery</u></h1>
+</div>
+
+<div class='responsive'>
+  <div class='gallery'>
+    <a target='_blank' href='img/fancies/fancy1.png'>
+      <img src='img/fancies/fancy1.png' width='600' height='400'>
+    </a>
+    <div class='desc'><b>Fancied Hubcaps</b></div>
+  </div>
+</div>
+
+<div class='responsive'>
+  <div class='gallery'>
+    <a target='_blank' href='img/fancies/fancy3.png'>
+      <img src='img/fancies/fancy3.png' width='600' height='400'>
+    </a>
+    <div class='desc'><b>Fancied Mouse</b></div>
+  </div>
+</div>
+
+<div class='responsive'>
+  <div class='gallery'>
+    <a target='_blank' href='img/fancies/fancy4.png'>
+      <img src='img/fancies/fancy4.png' width='600' height='400'>
+    </a>
+    <div class='desc'><b>Fancied Bucket (Our FANCIEST model!)</b></div>
+  </div>
+</div>
+
+<div class='responsive'>
+  <div class='gallery'>
+    <a target='_blank' href='img/fancies/fancy5.png'>
+      <img src='img/fancies/fancy5.png' width='600' height='400'>
+    </a>
+    <div class='desc'><b>Fancied Shower Curtains</b></div>
+  </div>
+</div>
+
+<div class='responsive'>
+  <div class='gallery'>
+    <a target='_blank' href='img/fancies/fancy6.png'>
+      <img src='img/fancies/fancy6.png' width='600' height='400'>
+    </a>
+    <div class='desc'><b>Fancied Die</b></div>
+  </div>
+</div>
+
+<div class='responsive'>
+  <div class='gallery'>
+    <a target='_blank' href='img/fancies/fancy7.png'>
+      <img src='img/fancies/fancy7.png' width='600' height='400'>
+    </a>
+    <div class='desc'><b>Fancied Shoes (Our BEST-SELLING model!)</b></div>
+  </div>
+</div>
+
+<div class='clearfix'></div>
+
+
+<div class='footer'>
+  <img src='/img/logo.png' height='130px' width='100px'>
+  </br><a href='#contact'>Contact</a></br>
+  <a href='#about'>About</a></br>
+  <a href='http://192.168.1.93/Staff.html'>Staff</a>
+</div>
+
+</body>
+</html>
