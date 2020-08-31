@@ -1,4 +1,43 @@
-<html>
+<?php
+if(isset($_POST['submit'])) {
+$num1  = $_POST['num1'];
+$num2  = $_POST['num2'];
+$num3  = $_POST['num3'];
+$num4  = $_POST['num4'];
+$num5  = $_POST['num5'];
+$num6  = $_POST['num6'];
+$num7  = $_POST['num7'];
+$num8  = $_POST['num8'];
+$num9  = $_POST['num9'];
+$num10 = $_POST['num10'];
+$num11 = $_POST['num11'];
+$num12 = $_POST['num12'];
+$num13 = $_POST['num13'];
+$num14 = $_POST['num14'];
+$num15 = $_POST['num15'];
+$num16 = $_POST['num16'];
+$num17 = $_POST['num17'];
+$num18 = $_POST['num18'];
+$num19 = $_POST['num19'];
+$num20 = $_POST['num20'];
+$num21 = $_POST['num21'];
+$num22 = $_POST['num22'];
+$num23 = $_POST['num23'];
+$num24 = $_POST['num24'];
+$num25 = $_POST['num25'];
+$num26 = $_POST['num26'];
+$num27 = $_POST['num27'];
+$num28 = $_POST['num28'];
+$num29 = $_POST['num29'];
+$num30 = $_POST['num30'];
+$num31 = $_POST['num31'];
+
+
+$file = file_get_contents('calendar.html');
+
+file_put_contents('/home/magickalwiz/http/calendar/calendar.html','calendar.html',FILE_USE_INCLUDE_PATH | FILE_APPEND);
+
+file_put_contents('/home/magickalwiz/http/calendar/calendar.html','<html>
 <title>TT Calendar</title>
 <style>
 html{
@@ -189,7 +228,7 @@ div.desc {
 
 .transparent {
   background:#7f7f7f;
-  background:rgba(0,0,0,0.7);
+  background:rgba(0,0,0,0.5);
 }
 </style>
 <script>
@@ -216,44 +255,44 @@ and saved to prevent loss of details.
     <form method="post" action="calsave.php" autocomplete="off">
     <table>
         <tr>
-            <textarea name="num1" class="availableDay">1</textarea>
-            <textarea name="num2" class="availableDay">2</textarea>
-            <textarea name="num3" class="availableDay">3</textarea>
-            <textarea name="num4" class="availableDay">4</textarea>
-            <textarea name="num5" class="availableDay">5</textarea>
-            <textarea name="num6" class="availableDay">6</textarea>
-            <textarea name="num7" class="availableDay">7</textarea>
+            <textarea name="num1" class="availableDay">'.$num1.'</textarea>
+            <textarea name="num2" class="availableDay">'.$num2.'</textarea>
+            <textarea name="num3" class="availableDay">'.$num3.'</textarea>
+            <textarea name="num4" class="availableDay">'.$num4.'</textarea>
+            <textarea name="num5" class="availableDay">'.$num5.'</textarea>
+            <textarea name="num6" class="availableDay">'.$num6.'</textarea>
+            <textarea name="num7" class="availableDay">'.$num7.'</textarea>
         </tr>
         <tr>
-            <textarea name="num8" class="availableDay">8</textarea>
-            <textarea name="num9" class="availableDay">9</textarea>
-            <textarea name="num10" class="availableDay">10</textarea>
-            <textarea name="num11" class="availableDay">11</textarea>
-            <textarea name="num12" class="availableDay">12</textarea>
-            <textarea name="num13" class="availableDay">13</textarea>
-            <textarea name="num14" class="availableDay">14</textarea>
+            <textarea name="num8" class="availableDay">'.$num8.'</textarea>
+            <textarea name="num9" class="availableDay">'.$num9.'</textarea>
+            <textarea name="num10" class="availableDay">'.$num10.'</textarea>
+            <textarea name="num11" class="availableDay">'.$num11.'</textarea>
+            <textarea name="num12" class="availableDay">'.$num12.'</textarea>
+            <textarea name="num13" class="availableDay">'.$num13.'</textarea>
+            <textarea name="num14" class="availableDay">'.$num14.'</textarea>
         </tr>
         <tr>
-            <textarea name="num15" class="availableDay">15</textarea>
-            <textarea name="num16" class="availableDay">16</textarea>
-            <textarea name="num17" class="availableDay">17</textarea>
-            <textarea name="num18" class="availableDay">18</textarea>
-            <textarea name="num19" class="availableDay">19</textarea>
-            <textarea name="num20" class="availableDay">20</textarea>
-            <textarea name="num21" class="availableDay">21</textarea>
+            <textarea name="num15" class="availableDay">'.$num15.'</textarea>
+            <textarea name="num16" class="availableDay">'.$num16.'</textarea>
+            <textarea name="num17" class="availableDay">'.$num17.'</textarea>
+            <textarea name="num18" class="availableDay">'.$num18.'</textarea>
+            <textarea name="num19" class="availableDay">'.$num19.'</textarea>
+            <textarea name="num20" class="availableDay">'.$num20.'</textarea>
+            <textarea name="num21" class="availableDay">'.$num21.'</textarea>
         </tr>
         <tr>
-            <textarea name="num22" class="availableDay">22</textarea>
-            <textarea name="num23" class="availableDay">23</textarea>
-            <textarea name="num24" class="availableDay">24</textarea>
-            <textarea name="num25" class="availableDay">25</textarea>
-            <textarea name="num26" class="availableDay">26</textarea>
-            <textarea name="num27" class="availableDay">27</textarea>
-            <textarea name="num28" class="availableDay">28</textarea>
+            <textarea name="num22" class="availableDay">'.$num22.'</textarea>
+            <textarea name="num23" class="availableDay">'.$num23.'</textarea>
+            <textarea name="num24" class="availableDay">'.$num24.'</textarea>
+            <textarea name="num25" class="availableDay">'.$num25.'</textarea>
+            <textarea name="num26" class="availableDay">'.$num26.'</textarea>
+            <textarea name="num27" class="availableDay">'.$num27.'</textarea>
+            <textarea name="num28" class="availableDay">'.$num28.'</textarea>
         </tr>
         <tr>
-            <textarea name="num29" class="availableDay">29</textarea>
-            <textarea name="num30" class="availableDay">30</textarea>
+            <textarea name="num29" class="availableDay">'.$num29.'</textarea>
+            <textarea name="num30" class="availableDay">'.$num30.'</textarea>
             <textarea class="nextmonth">1</textarea>
             <textarea class="nextmonth">2</textarea>
             <textarea class="nextmonth">3</textarea>
@@ -268,3 +307,8 @@ and saved to prevent loss of details.
 </body>
 </html>
 
+',FILE_USE_INCLUDE_PATH);
+}
+
+header('Location: http://192.168.1.93/calendar/calendar.html');
+?>
