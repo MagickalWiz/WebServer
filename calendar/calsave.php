@@ -228,7 +228,7 @@ div.desc {
 
 .transparent {
   background:#7f7f7f;
-  background:rgba(0,0,0,0.5);
+  background:rgba(0,0,0,0.7);
 }
 </style>
 <script>
@@ -246,6 +246,8 @@ window.onload=function() {
 Tri-Tech Calendar By MagickalWiz
 Created using HTML and PHP, this calendar can be edited
 and saved to prevent loss of details.
+Currently, it does not add a 31st day to certain
+months, and I will update it with PHP soon.
 </pre>
 </div>
 </font>
