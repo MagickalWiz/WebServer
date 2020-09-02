@@ -31,6 +31,10 @@ $num28 = $_POST['num28'];
 $num29 = $_POST['num29'];
 $num30 = $_POST['num30'];
 $num31 = $_POST['num31'];
+$num32 = $_POST['num31'];
+$num33 = $_POST['num31'];
+$num34 = $_POST['num31'];
+$num35 = $_POST['num31'];
 
 
 $file = file_get_contents('calendar.html');
@@ -240,14 +244,14 @@ window.onload=function() {
 }
 </script>
 <body>
-<div class="transparent col-4 col-s-6">
+<div class="transparent col-6 col-s-6">
 <font color="#ffff4d">
 </hr><pre>
 Tri-Tech Calendar By MagickalWiz
-Created using HTML and PHP, this calendar can be edited
-and saved to prevent loss of details.
-Currently, it does not add a 31st day to certain
-months, and I will update it with PHP soon.
+Created using HTML and PHP, this calendar can be edited and saved
+to prevent loss of details.  Currently, it does not add a
+31st day to certain months, as well as is not organized by day,
+and I will update it with PHP soon.
 </pre>
 </div>
 </font>
@@ -295,11 +299,11 @@ months, and I will update it with PHP soon.
         <tr>
             <textarea name="num29" class="availableDay">'.$num29.'</textarea>
             <textarea name="num30" class="availableDay">'.$num30.'</textarea>
-            <textarea class="nextmonth">1</textarea>
-            <textarea class="nextmonth">2</textarea>
-            <textarea class="nextmonth">3</textarea>
-            <textarea class="nextmonth">4</textarea>
-            <textarea class="nextmonth">5</textarea>
+            <textarea name="num31" class="availableDay">'.$num31.'</textarea>
+            <textarea name="num32" class="availableDay">'.$num32.'</textarea>
+            <textarea name="num33" class="availableDay">'.$num33.'</textarea>
+            <textarea name="num34" class="availableDay">'.$num34.'</textarea>
+            <textarea name="num35" class="availableDay">'.$num35.'</textarea>
         </tr>
     </table>
 <input type="submit" value=" UPDATE " name="submit" />
@@ -307,9 +311,20 @@ months, and I will update it with PHP soon.
 </div>
 </div>
 </body>
-</html>
-
-',FILE_USE_INCLUDE_PATH);
+<script>
+<?php
+if(months == "January" && months == "March" && months == "May" && months == "July" && months == "August" && months == "October" && months == "December"){
+	$num31 = "31";
+}	elseif (months == "April" && months == "June" && months == "September" && months == "November"){
+	$num31 = "";
+}	else (months == "February"){
+	$num29 = "";
+	$num30 = "";
+	$num31 = "";
+}
+?>
+</script>
+</html>',FILE_USE_INCLUDE_PATH);
 }
 
 header('Location: http://192.168.1.93/calendar/calendar.html');
